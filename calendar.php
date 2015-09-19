@@ -25,6 +25,13 @@ $days = array(1 => '31','29','31','30',
     '31','30','31','31','30','31','30','31');
 // Make years array
 $years = range(2011,2021);
+// Combine the arrays into multidimensional array
+$cal = array(
+    'Month' => $months,
+    'Day' => $days,
+    'Year' => $years
+    );
+
 ?>
 </form>
 </body>
