@@ -31,9 +31,21 @@ $cal = array(
     'Day' => $days,
     'Year' => $years
     );
-// pull down menu for months
+// drop down menu for months
 echo '<select name ="Month">';
 foreach ($months as $key => $value){
+    echo "<option value=\"$key\">$value</option>\n";
+}
+echo '</select>';
+// drop down menu for days
+echo '<select name ="Day">';
+foreach ($days as $key => $value){
+    echo "<option value=\"$key\">$value</option>\n";
+}
+echo '</select>';
+// drop down menu for years
+echo '<select name ="Year">';
+foreach ($years as $key => $value){
     echo "<option value=\"$key\">$value</option>\n";
 }
 echo '</select>';
